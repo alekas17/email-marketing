@@ -1,0 +1,141 @@
+{
+  "addons": [
+    "heroku-postgresql",
+    "heroku-postgresql",
+    "scheduler"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    },
+    {
+      "url": "heroku/php"
+    }
+  ],
+  "env": {
+    "APP_DEBUG": {
+      "required": true
+    },
+    "APP_ENV": {
+      "required": true
+    },
+    "APP_KEY": {
+      "required": true
+    },
+    "APP_NAME": {
+      "required": true
+    },
+    "APP_URL": {
+      "required": true
+    },
+    "BASIQ_API_KEY": {
+      "required": true
+    },
+    "DB_CONNECTION": {
+      "required": true
+    },
+    "FORCE_HTTPS": {
+      "required": true
+    },
+    "HEROKU_POSTGRESQL_CHARCOAL_URL": {
+      "required": true
+    },
+    "HEROKU_POSTGRESQL_NAVY_URL": {
+      "required": true
+    },
+    "LIGHTRAIL_BEARER_TOKEN": {
+      "required": true
+    },
+    "LIGHTRAIL_PROGRAM_ID": {
+      "required": true
+    },
+    "LIGHTRAIL_PROGRAM_MERCHANT_ID": {
+      "required": true
+    },
+    "MAIL_DRIVER": {
+      "required": true
+    },
+    "MAIL_ENCRYPTION": {
+      "required": true
+    },
+    "MAIL_FROM_ADDRESS": {
+      "required": true
+    },
+    "MAIL_FROM_NAME": {
+      "required": true
+    },
+    "MAIL_HOST": {
+      "required": true
+    },
+    "MAIL_PASSWORD": {
+      "required": true
+    },
+    "MAIL_PORT": {
+      "required": true
+    },
+    "MAIL_USERNAME": {
+      "required": true
+    },
+    "PLASTIQ_SERVICE_FEE": {
+      "required": true
+    },
+    "STRIPE_API_KEY": {
+      "required": true
+    },
+    "STRIPE_PK": {
+      "required": true
+    },
+    "TWILIO_API_KEY": {
+      "required": true
+    },
+    "TWILIO_SID": {
+      "required": true
+    },
+    "TWILIO_TOKEN": {
+      "required": true
+    },
+    "YODLEE_API_URL": {
+      "required": true
+    },
+    "YODLEE_APP_ID": {
+      "required": true
+    },
+    "YODLEE_COBRAND_NAME": {
+      "required": true
+    },
+    "YODLEE_LOCAL": {
+      "required": true
+    },
+    "YODLEE_LOGIN": {
+      "required": true
+    },
+    "YODLEE_NODE_URL": {
+      "required": true
+    },
+    "YODLEE_PASSWORD": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "Standard-1X"
+    },
+    "supervisorctl": {
+      "quantity": 1,
+      "size": "Standard-1X"
+    },
+    "supervisor": {
+      "quantity": 1,
+      "size": "Standard-1X"
+    },
+    "worker": {
+      "quantity": 1,
+      "size": "Standard-1X"
+    }
+  },
+  "name": "plastiq",
+  "scripts": {
+  },
+  "stack": "heroku-18"
+}

@@ -1,0 +1,48 @@
+
+// Body
+$body-bg: #f8fafc;
+
+// Typography
+$font-family-sans-serif: "Kanit", sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// Colors
+$white: #fff;
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66D9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+$light-blue: #006fba;
+$dark-blue: #083587;
+$fade-blue: #698bc8;
+$dark-text-blue: #004183;
+$blue-secondary: #354052;
+$text-blue: #1278cd;
+$border-gray: #e1e1e1;
+$text-gray: #4c4c4c;
+$gray1: #999999;
+$black: #0d0d0d;
+$red: #e82b2f;
+$error: #ed2626;
+$bg-gray: #f2f3f8;
+$tblgray: #f3f4f6;
+$tblgreen: #57c059;
+
+// RWD Media Queries (Breakpoints)
+$tlarge: 'only screen and (max-width : 1200px)';
+$large: 'only screen and (max-width : 1199px)';
+$medium: 'only screen and (max-width : 1024px)';
+$tabletL: 'only screen and (max-width : 991px)';
+$tablet: 'only screen and (max-width : 768px)';
+$bigmobile: 'only screen and (max-width : 575px)';
+$mobile: 'only screen and (max-width : 480px)';
+$mobileS: 'only screen and (max-width : 375px)';
+$iphone: 'only screen and (max-device-width : 375px)';
+$small: 'only screen and (max-width : 320px)';

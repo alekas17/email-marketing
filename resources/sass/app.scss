@@ -1,0 +1,18 @@
+// Fonts
+@import "fonts";
+
+// Variables
+@import "variables";
+@import "mixin";
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+// Topbar Style
+@import "topbar";
+// Footer Style
+@import "footer";
+
+// Page-specific styles
+
+@import "pages/payment", "pages/account";

@@ -1,0 +1,276 @@
+.my-account {
+    background: $white;
+    border-radius: 5px;
+    border: 1px $border-gray solid;
+    padding-bottom: 70px;
+
+    form {
+        h3 {
+            font-family: 'Kanit';
+            font-size: 16px;
+            color: $gray1;
+            font-weight: 400;
+            margin-bottom: 40px;
+        }
+
+        .input-wrapper {
+            width: 70%;
+
+            @media #{$bigmobile} {
+                width: 100%;
+            }
+
+            &.two-col {
+                input {
+                    width: 48%;
+                }
+            }
+        }
+
+        input {
+            font-family: 'Kanit';
+            font-size: 16px;
+            color: $gray1;
+            font-weight: 300;
+            border-radius: 0;
+            height: 45px;
+            border: 1px $gray1 solid;
+
+            &::-webkit-input-placeholder {
+                /* Chrome/Opera/Safari */
+                color: gray1;
+            }
+
+            &::-moz-placeholder {
+                /* Firefox 19+ */
+                color: gray1;
+            }
+
+            &:-ms-input-placeholder {
+                /* IE 10+ */
+                color: gray1;
+            }
+
+            &:-moz-placeholder {
+                /* Firefox 18- */
+                color: gray1;
+            }
+        }
+    }
+
+    @media #{$bigmobile} {
+        .form-group {
+            flex-wrap: wrap;
+        }
+    }
+
+    .account-details {
+        >div {
+            padding-right: 30px;
+
+            @media #{$tlarge} {
+                padding-right: 0;
+            }
+        }
+
+        .hid {
+            display: none;
+
+            input {
+                margin-bottom: 20px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .form-text {
+            font-family: 'Kanit';
+            font-size: 13px;
+            font-weight: 300;
+            margin-bottom: 15px;
+            color: $gray1;
+
+            &.required {
+                &::after {
+                    content: "*";
+                    display: inline;
+                    color: $error;
+                }
+            }
+        }
+
+        label {
+            width: 30%;
+            font-family: 'Kanit';
+            font-size: 16px;
+            font-weight: 400;
+            color: $black;
+
+            @media #{$bigmobile} {
+                width: 100%;
+            }
+        }
+
+        button {
+            width: 175px;
+            text-transform: uppercase;
+            font-family: 'Kanit';
+            font-size: 14px;
+            color: $text-blue;
+            background: $white;
+            border: 1px $text-blue solid;
+            font-weight: 500;
+            height: 45px;
+            cursor: pointer;
+        }
+    }
+
+    .authentication {
+        background: url('../images/account/divider.png') no-repeat left center/auto 100%;
+        position: relative;
+
+        @media #{$tlarge} {
+            background: 0;
+            margin-top: 25px;
+            padding-top: 25px;
+            border-top: 1px $gray1 dotted;
+
+            &::before {
+                content: " ";
+                display: block;
+                height: 1px;
+                width: 100%;
+            }
+        }
+
+        >div {
+            padding-left: 30px;
+
+            @media #{$tlarge} {
+                padding-left: 0;
+            }
+        }
+
+        .heading {
+            p {
+                font-family: 'Kanit';
+                font-size: 13px;
+                color: $gray1;
+                font-weight: 300;
+            }
+        }
+
+        .form-text {
+            font-family: 'Kanit';
+            font-size: 13px;
+            font-weight: 300;
+            margin-bottom: 15px;
+            color: $gray1;
+        }
+
+        label {
+            width: 30%;
+            font-family: 'Kanit';
+            font-size: 16px;
+            font-weight: 400;
+            color: $black;
+
+            @media #{$bigmobile} {
+                width: 100%;
+            }
+        }
+
+        input {
+            font-family: 'Kanit';
+            font-size: 16px;
+            color: $gray1;
+            font-weight: 300;
+            border-radius: 0;
+            height: 45px;
+            border: 1px $gray1 solid;
+            width: 80%;
+
+            @media #{$bigmobile} {
+                width: 100%;
+            }
+
+            &::-webkit-input-placeholder {
+                /* Chrome/Opera/Safari */
+                color: gray1;
+            }
+
+            &::-moz-placeholder {
+                /* Firefox 19+ */
+                color: gray1;
+            }
+
+            &:-ms-input-placeholder {
+                /* IE 10+ */
+                color: gray1;
+            }
+
+            &:-moz-placeholder {
+                /* Firefox 18- */
+                color: gray1;
+            }
+        }
+
+        .input-wrapper {
+            div {
+                margin-bottom: 15px;
+
+                @media #{$bigmobile} {
+                    flex-wrap: wrap;
+
+                    button {
+                        margin-top: 15px;
+                    }
+                }
+            }
+
+            button {
+                width: 18%;
+                text-transform: uppercase;
+                font-family: 'Kanit';
+                font-size: 14px;
+                color: $text-blue;
+                background: $white;
+                border: 1px $text-blue solid;
+                font-weight: 500;
+                height: 45px;
+                cursor: pointer;
+
+                @media #{$bigmobile} {
+                    width: 110px;
+                }
+            }
+
+            .btn-enable {
+                width: 110px;
+            }
+        }
+
+
+    }
+
+    .btn-save {
+        @include linear-gradient($light-blue, $dark-blue);
+        font-family: 'Kanit';
+        font-weight: 500;
+        font-size: 14px;
+        color: $white;
+        width: 195px;
+        border-radius: 40px;
+        text-transform: uppercase;
+        height: 45px;
+        cursor: pointer;
+
+        @media #{$bigmobile} {
+            margin: 50px auto 0;
+        }
+
+    }
+
+}
